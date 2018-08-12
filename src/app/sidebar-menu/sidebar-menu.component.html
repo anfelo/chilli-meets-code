@@ -1,0 +1,22 @@
+<div class="brand-logo">
+  <a href="/home">
+    <img src="src/assets/img/cmc-icon-orange.png" alt="Chilli meets code logo">
+  </a>
+</div>
+<aside *ngIf="!isMenuCollapsed" class="menu">
+  <ul class="menu-list">
+    <li *ngFor="let menuItem of menuItems" class="menu-item">
+      <a href="{{ menuItem.url }}" class="has-text-grey" [ngClass]="{'is-active': menuItem.isActive}">
+        {{ menuItem.text }}
+      </a>
+    </li>
+  </ul>
+</aside>
+<div class="sm-display toggle-menu">
+  <div *ngIf="isMenuCollapsed" (click)="toggleMenu()">
+    <img src="src/assets/img/More-2_96.png" alt="Expand Menu Icon">
+  </div>
+  <div *ngIf="!isMenuCollapsed" (click)="toggleMenu()">
+    <img src="src/assets/img/Delete-2_96.png" alt="Collapse Menu Icon">
+  </div>
+</div>

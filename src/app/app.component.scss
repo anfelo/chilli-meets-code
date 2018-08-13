@@ -1,3 +1,16 @@
 :host {
   height: 100vh;
 }
+
+main {
+  width: 100%;
+  margin: 87px 0 0;
+}
+
+@media (min-width: 769px) {
+  main {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    margin-top: 0;
+  }
+}

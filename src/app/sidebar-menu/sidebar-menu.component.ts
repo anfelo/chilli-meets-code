@@ -28,7 +28,7 @@ export class SidebarMenuComponent implements OnInit {
       },
       {
         text: 'COURSES',
-        url: '/course'
+        url: '/courses'
       },
       {
         text: 'GET IN TOUCH',

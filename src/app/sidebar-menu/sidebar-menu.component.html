@@ -1,12 +1,12 @@
 <div class="brand-logo">
-  <a href="/home">
+  <a href="/">
     <img src="src/assets/img/cmc-icon-orange.png" alt="Chilli meets code logo">
   </a>
 </div>
 <aside *ngIf="!isMenuCollapsed" class="menu">
   <ul class="menu-list">
     <li *ngFor="let menuItem of menuItems" class="menu-item">
-      <a href="{{ menuItem.url }}" class="has-text-grey" [ngClass]="{'is-active': menuItem.isActive}">
+      <a class="has-text-grey" [routerLink]='menuItem.url' routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">
         {{ menuItem.text }}
       </a>
     </li>

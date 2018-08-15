@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SidebarMenuModule } from './sidebar-menu/sidebar-menu.module';
+import { WelcomePageModule } from './welcome-page/welcome-page.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, SidebarMenuModule],
+  imports: [BrowserModule, SidebarMenuModule, WelcomePageModule],
   providers: [],
   bootstrap: [AppComponent]
 })

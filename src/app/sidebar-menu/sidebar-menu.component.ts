@@ -16,28 +16,23 @@ export class SidebarMenuComponent implements OnInit {
     this.menuItems = [
       {
         text: 'WELCOME',
-        url: '/home',
-        isActive: true
+        url: '/'
       },
       {
         text: 'ABOUT ME',
-        url: '/about',
-        isActive: false
+        url: '/about'
       },
       {
         text: 'BLOG',
-        url: '/blog',
-        isActive: false
+        url: '/blog'
       },
       {
         text: 'COURSES',
-        url: '/course',
-        isActive: false
+        url: '/courses'
       },
       {
         text: 'GET IN TOUCH',
-        url: '/contact',
-        isActive: false
+        url: '/contact'
       }
     ];
   }
